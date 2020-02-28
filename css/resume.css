@@ -72,7 +72,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #F9E79F;
 }
 
 .dev-icons {
@@ -80,13 +80,14 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #F9E79F;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
+  /* color: #FCFAB4; */
 }
 
 #sideNav .navbar-toggler:focus {
@@ -130,7 +131,11 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+    /* color: #FCFAB4; */
   }
+  /* #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link a:active {
+    color: #FCFAB4;
+  } */
 }
 
 section.resume-section {
@@ -160,17 +165,34 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #6c757d !important;
 }
 
 .text-primary {
-  color: #56c1d6 !important;
+  color: #F1C40F !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #495057;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #F9E79F;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #F1C40F;
+}
+
+/* Code from https://stackoverflow.com/questions/16625972/change-color-of-bootstrap-navbar-on-hover-link
+Credits: @zim 03.21.2018 */
+
+/* Change navbar hover and active colors */
+.navbar-nav .nav-item .nav-link {
+    color: #F9E79F;
+    /* color: rgba(253, 204, 13, 0.46) */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #F8F9F9;
 }
