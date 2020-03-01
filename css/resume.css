@@ -188,11 +188,11 @@ a:hover, a:focus, a:active {
 Credits: @zim 03.21.2018 */
 
 /* Change navbar hover and active colors */
+.navbar-nav .nav-item:hover .nav-link {
+    color: #F8F9F9;
+}
+
 .navbar-nav .nav-item .nav-link {
     color: #F9E79F;
     /* color: rgba(253, 204, 13, 0.46) */
-}
-
-.navbar-nav .nav-item:hover .nav-link {
-    color: #F8F9F9;
 }
