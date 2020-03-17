@@ -49,7 +49,7 @@ p.lead {
 
 p.required-logo-credits {
   font-size: 8pt;
-  padding-left: 58px;
+  padding-left: 68px;
   padding-top: 10px;
 }
 
@@ -87,6 +87,16 @@ p.required-logo-credits {
 
 .dev-icons .list-inline-item i:hover {
   color: #F9E79F;
+}
+
+.dev-icons .list-inline-item img {
+  filter: opacity(30%);
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.dev-icons .list-inline-item img:hover {
+  filter: opacity(8%);
 }
 
 /* .dev-icons .list-inline-item .sql-icon :hover {

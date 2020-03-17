@@ -88,7 +88,7 @@
         <div>
           <a href="./img/data_science_resume_2020.docx" download>Download Resume (Data Science)</a>
           <h7> | </h7>
-          <a href="./img/cogling_resume_2020.docx" download>Download Resume (Computational Linguist)</a>
+          <a href="./img/cogling_resume_2020.docx" download>Download Resume (Computational Linguistics)</a>
         </div>
       </div>
     </section>
@@ -153,10 +153,10 @@
                     Created a musical recommendation system based on a short user input describing their mood (NLP (spaCy), Web-scraping, Clustering, Flask, HTML, CSS)
                   </li>
                   <li>
+                    Mapped road closures during Hurricane Harvey (Web-scraping, Logistic Regression, Tableau)
+                  </li>
+                  <li>
                   Classified sub-Reddit posts as the Beatles or Queen (Web-scraping, NLP, Machine Learning)
-                </li>
-                <li>
-                  Mapped road closures during Hurricane Harvey (Web-scraping, Logistic Regression, Tableau)
                 </li>
                 </ul>
               <li>
@@ -258,35 +258,27 @@
         <ul class="list-inline dev-icons">
           <li class="list-inline-item">
             <i class="fab fa-python"></i>
-            <img class="sql-icon" src="./img/icons8-sql-50.png" alt="filter applied"/>
+            <img class="fab" src="./img/icons8-sql-50.png">
           </li>
+          <p class="required-logo-credits"><a target="_blank" href="https://icons8.com/icons/set/sql">SQL icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
         </ul>
-        <p class="required-logo-credits"><a target="_blank" href="https://icons8.com/icons/set/sql">SQL icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
 
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Pandas</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Scikit-learn</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Statsmodels</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Matplotlib</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Seaborn</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             spaCy</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             NLTK</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             BeautifulSoup</li>
         </ul>
 
@@ -295,20 +287,13 @@
 
         <div class="subheading mb-3">Languages</div>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>
+          <li><i class="fa-li fa fa-check"></i>
             Spanish / Español
           </li>
           <ul>
-            <li>
-               19 years of study
-            </li>
-            <li>
-              7 / 8 on the Avant STAMP 4s assessment
-            </li>
-            <li>
-              1 semester in Buenos Aires, Argentina
-            </li>
+            <li>19 years of study</li>
+            <li>7 / 8 on the Avant STAMP 4s assessment</li>
+            <li>1 semester in Buenos Aires, Argentina</li>
             <li>
               <a href="https://uva.digication.com/span_4530_proyecto_digital_kelly_slatery/Tesis_Prop_sito/published" target="_blank">
                 Final Project: Second Language Acquisition (Spring 2017)
@@ -320,15 +305,9 @@
             Chinese (Mandarin) / 中文
           </li>
           <ul>
-            <li>
-              6 years of study
-            </li>
-            <li>
-              1 year in Taitung, Taiwan
-            </li>
-            <li>
-              1 summer in Shanghai, China
-            </li>
+            <li>6 years of study</li>
+            <li>1 year in Taitung, Taiwan</li>
+            <li>1 summer in Shanghai, China</li>
             <li href="">
               <a href="https://pages.shanti.virginia.edu/Kelly_Slatery_2/" target="_blank">
                 ePortfolio: CHIN 3020 (Fall 2015)
@@ -353,7 +332,21 @@
           <div class="resume-content">
             <a href="https://github.com/KellySlatery/capstone" target="_blank"><h3 class="mb-0">Musical Recommendation System</h3></a>
             <div class="subheading mb-3">Capstone project for General Assembly Data Science Immersive</div>
-            <div>Created a musical recommendation system.</div>
+            <div>For our final capstone project at General Assembly, I created a recommender system, hosted locally through Flask, that recommends each user three musicals based on their mood. For this project, I used:
+              <ul>
+                <li>Python</li>
+                <li>Selenium</li>
+                <li>BeautifulSoup</li>
+                <li>Requests</li>
+                <li>Wikipedia API</li>
+                <li>spaCy</li>
+                <li>scikit-learn</li>
+                <li>Flask</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              I used Python for the majority of this project. Selenium, Requests, the Wikipedia API, and BeautifulSoup were used to collect the data (196 most popular user-ranked musicals and their synopses). Then, I used spaCy to process and vectorize the text data, and later to compute cosine similarity between the user input and each musical synopsis. I also used TextBlob to compute sentiment ratings for each synopsis. To evaluate my recommender, I clustered musicals using a scikit-learned KMeans model to compare recommendations. Last, I implemented the recommendation system using Flask to create a locally hosted webpage where a user can type in a short description of their mood, answering the questions, “How are you feeling? What’s going on with you?” and receive three musicals to listen to that match their mood.
+            </div>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">March 2020</span>
@@ -365,7 +358,16 @@
             <a href="https://github.com/KellySlatery/client_project" target="_blank"><h3 class="mb-0">Optimizing Evacuation Routes using Real-Time Traffic Information</h3></a>
             <div class="subheading mb-3">Project #5 for General Assembly Data Science Immersive</div>
             <p></p>
-            <div>Optimized evacuation routes.</div>
+            <div>For our fifth project at General Assembly, we worked in groups of three to address a problem faced by clients at NewLight Technologies. My group worked on optimizing evacuation routes using real-time traffic information to address the lack of up-to-date navigational information during disasters. For this project, we used:
+              <ul>
+                <li>Python</li>
+                <li>GetOldTweets3</li>
+                <li>scikit-learn</li>
+                <li>Geocoder</li>
+                <li>Tableau</li>
+              </ul>
+            My primary tasks on this project were: collecting > 100,000 tweets using GetOldTwets3, organizing the data, modeling the data using Logistic Regression in scikit-learn, exporting the model using the Python pickle library, evaluating the models using accuracy scores and confusion matrices, getting predictions on the test dataset, and exporting our coordinates to a Tableau map. In the end, we were able to identify 103 tweets containing useful road closure information and map 43 of those road closures.
+            </div>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">February 2020</span>
@@ -374,10 +376,18 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/KellySlatery/nlp_project_dsi" target="_blank"><h3 class="mb-0">Classifying Subreddibt Posts: Beatles vs. Queen</h3></a>
+            <a href="https://github.com/KellySlatery/nlp_project_dsi" target="_blank"><h3 class="mb-0">Classifying Subreddibt Posts: The Beatles vs. Queen</h3></a>
             <div class="subheading mb-3">Project #3 for General Assembly Data Science Immersive</div>
             <p></p>
-            <div>Classified posts.</div>
+            <div>For our third project at General Assembly, I worked with the Reddit API, NLP techniques, and various supervised learning models to classify tweets as belonging to either the Beatles or Queen Subreddit. For this project, I used:
+              <ul>
+                <li>Python</li>
+                <li>Pushshift Reddit API</li>
+                <li>NLTK (Natural Language Toolkit)</li>
+                <li>scikit-learn</li>
+              </ul>
+            The purpose of this project was to address the question of “Who is really the better band?” by looking at what distinguishes how the respective bands’ fanbases talk about them. First, I pulled 40,000 total Reddit posts and cleaned them using NLTK. Then, I GridSearched over combinations of CountVectorizer and TFIDFVectorizer (Term Frequency Inverse Document Frequency) with 7 different supervised learning models (Logistic Regression, K-Nearest Neighbors, Random Forest, Multinomial Naïve Bayes, Bagging Classifier, Adaptive Boost Classifier, Support Vector Classifier) to classify tweets. I used Logistic Regression paired with TFIDFVectorizer as my final classification model because it provided fairly accurate predictions (accuracy ~= 85.53% ; baseline accuracy ~= 50.6%) and a more interpretable model. The result was that, though both bands receive a lot of love and attention from their fanbases, the Beatles are more pop while Queen is solidly rock. 
+            </div>
           </div>
           <div class="resume-date text-md-right">
             <span class="text-primary">January 2020</span>
