@@ -41,16 +41,16 @@
           <a class="nav-link js-scroll-trigger" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
         </li>
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
@@ -69,7 +69,7 @@
         <h1 class="mb-0">Kelly
           <span class="text-primary">Slatery</span>
         </h1>
-        <div class="subheading mb-5">San Francisco, CA ·
+        <div class="subheading mb-5">San Francisco Bay Area ·
           <a href="mailto:kelly.slatery@gmail.com" target="_blank">kelly.slatery@gmail.com</a>
         </div>
         <p class="lead mb-5">Computers are logical and language is complex. I find joy in exploring the relationship between the two to discover meaningful insights from large datasets through detail-oriented logic and a persistent pursuit of the truth. With my cognitive science, quantitative, and multilingual background, I tackle challenges from a multidisciplinary lens with dedication, consideration, and joy to ultimately bridge the gap between numbers, languages, technology, and humans.
@@ -96,37 +96,73 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
       <div class="w-100">
-        <h2 class="mb-5">Education</h2>
+        <h2 class="mb-5">Projects</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">University of Virginia</h3>
-            <div class="subheading mb-3">Bachelor of Arts</div>
-            <div>Cognitive Science - Linguistics Concentration</div>
-            <div>East Asian Studies</div>
-            <br>
-            <div>GPA: 3.94</div>
-            <div>Phi Beta Kappa, Spring 2017 (Top 4%)</div>
-            <div><i>Relevant Coursework:</i> Research Methods & Data Analysis I, Software Development Methods, Intro to Programming, Discrete Mathematics, Neural Basis of Behavior, Intro to Cognition, Psycholinguistics, Philosophy of Language, Second Language Acquisition</div>
+            <a href="https://github.com/KellySlatery/capstone" target="_blank"><h3 class="mb-0">Musical Recommendation System</h3></a>
+            <div class="subheading mb-3">Capstone project for General Assembly Data Science Immersive</div>
+            <div>For our final capstone project at General Assembly, I created a recommender system, hosted locally through Flask, that recommends each user three musicals based on their mood. For this project, I used:
+              <ul>
+                <li>Python</li>
+                <li>Selenium</li>
+                <li>BeautifulSoup</li>
+                <li>Requests</li>
+                <li>Wikipedia API</li>
+                <li>spaCy</li>
+                <li>scikit-learn</li>
+                <li>Flask</li>
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              I used Python for the majority of this project. Selenium, Requests, the Wikipedia API, and BeautifulSoup were used to collect the data (196 most popular user-ranked musicals and their synopses). Then, I used spaCy to process and vectorize the text data, and later to compute cosine similarity between the user input and each musical synopsis. I also used TextBlob to compute sentiment ratings for each synopsis. To evaluate my recommender, I clustered musicals using a scikit-learned KMeans model to compare recommendations. Last, I implemented the recommendation system using Flask to create a locally hosted webpage where a user can type in a short description of their mood, answering the questions, “How are you feeling? What’s going on with you?” and receive three musicals to listen to that match their mood.
+            </div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2014 - May 2018</span>
+            <span class="text-primary">March 2020</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">West Potomac High School</h3>
-            <div class="subheading mb-3">Advanced Studies Diploma</div>
+            <a href="https://github.com/KellySlatery/client_project" target="_blank"><h3 class="mb-0">Optimizing Evacuation Routes using Real-Time Traffic Information</h3></a>
+            <div class="subheading mb-3">Project #5 for General Assembly Data Science Immersive</div>
             <p></p>
-            <div>GPA: 4.48</div>
-            <div>World Languages Department Student of the Year 2014</div>
-            <div><i>Relevant Coursework:</i> Multivariable Calculus, Matrix Algebra, BC Calculus</div>
+            <div>For our fifth project at General Assembly, we worked in groups of three to address a problem faced by clients at NewLight Technologies. My group worked on optimizing evacuation routes using real-time traffic information to address the lack of up-to-date navigational information during disasters. For this project, we used:
+              <ul>
+                <li>Python</li>
+                <li>GetOldTweets3</li>
+                <li>scikit-learn</li>
+                <li>Geocoder</li>
+                <li>Tableau</li>
+              </ul>
+            My primary tasks on this project were: collecting > 100,000 tweets using GetOldTwets3, organizing the data, modeling the data using Logistic Regression in scikit-learn, exporting the model using the Python pickle library, evaluating the models using accuracy scores and confusion matrices, getting predictions on the test dataset, and exporting our coordinates to a Tableau map. In the end, we were able to identify 103 tweets containing useful road closure information and map 43 of those road closures.
+            </div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">September 2010 - June 2014</span>
+            <span class="text-primary">February 2020</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <a href="https://github.com/KellySlatery/nlp_project_dsi" target="_blank"><h3 class="mb-0">Classifying Subreddibt Posts: The Beatles vs. Queen</h3></a>
+            <div class="subheading mb-3">Project #3 for General Assembly Data Science Immersive</div>
+            <p></p>
+            <div>For our third project at General Assembly, I worked with the Reddit API, NLP techniques, and various supervised learning models to classify tweets as belonging to either the Beatles or Queen Subreddit. For this project, I used:
+              <ul>
+                <li>Python</li>
+                <li>Pushshift Reddit API</li>
+                <li>NLTK (Natural Language Toolkit)</li>
+                <li>scikit-learn</li>
+              </ul>
+            The purpose of this project was to address the question of “Who is really the better band?” by looking at what distinguishes how the respective bands’ fanbases talk about them. First, I pulled 40,000 total Reddit posts and cleaned them using NLTK. Then, I GridSearched over combinations of CountVectorizer and TFIDFVectorizer (Term Frequency Inverse Document Frequency) with 7 different supervised learning models (Logistic Regression, K-Nearest Neighbors, Random Forest, Multinomial Naïve Bayes, Bagging Classifier, Adaptive Boost Classifier, Support Vector Classifier) to classify tweets. I used Logistic Regression paired with TFIDFVectorizer as my final classification model because it provided fairly accurate predictions (accuracy ~= 85.53% ; baseline accuracy ~= 50.6%) and a more interpretable model. The result was that, though both bands receive a lot of love and attention from their fanbases, the Beatles are more pop while Queen is solidly rock.
+            </div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2020</span>
           </div>
         </div>
 
@@ -135,13 +171,13 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
       <div class="w-100">
-        <h2 class="mb-5">Experience</h2>
+        <h2 class="mb-5">Education</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Data Science Immersive Student</h3>
+            <h3 class="mb-0">Data Science Immersive</h3>
             <div class="subheading mb-3">General Assembly</div>
             <p></p>
             <div>
@@ -172,81 +208,36 @@
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <h3 class="mb-0">Fulbright English Teaching Assistant</h3>
-            <div class="subheading mb-3">Fulbright Taiwan, Foundation for Scholarly Exchange</div>
-            <p></p>
-            <ul>
-              <li>
-                Collaborated daily with a local English teacher to plan and execute 14 English classes per week for grades 3-6 in rural Taiwan
-              </li>
-              <li>
-                Prepared and executed 4 engaging, content-based English lessons per week focused on cultivating international perspective
-              </li>
-              <li>
-                Fostered community engagement through an after-school running club, English Corner at the local vocational school, and English camps
-              </li>
-              <li>
-                Developed teaching strategies, classroom management techniques, and intercultural communication skills at bi-weekly professional development workshops
-              </li>
-            </ul>
+            <h3 class="mb-0">University of Virginia</h3>
+            <div class="subheading mb-3">Bachelor of Arts</div>
+            <div>Cognitive Science - Linguistics Concentration</div>
+            <div>East Asian Studies</div>
+            <br>
+            <div>GPA: 3.94</div>
+            <div>Phi Beta Kappa, Spring 2017 (Top 4%)</div>
+            <div><i>Relevant Coursework:</i> Research Methods & Data Analysis I, Software Development Methods, Intro to Programming, Discrete Mathematics, Neural Basis of Behavior, Intro to Cognition, Psycholinguistics, Philosophy of Language, Second Language Acquisition</div>
+            <div><i>Previous Coursework:</i> Multivariable Calculus, Matrix Algebra, BC Calculus</div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">August 2018 - July 2019</span>
+            <span class="text-primary">August 2014 - May 2018</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <!-- <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <h3 class="mb-0">Research Assistant</h3>
-            <div class="subheading mb-3">UVA Augmentative and Alternative Communication Lab</div>
+            <h3 class="mb-0">West Potomac High School</h3>
+            <div class="subheading mb-3">Advanced Studies Diploma</div>
             <p></p>
-            <ul>
-              <li>
-                Collaborated with team of five to design, execute, and analyze data from semester-long research study concerning the best teaching method for Minspeak™ communication devices
-              </li>
-              <li>
-                Led the writing and editing of our final research paper, currently in review
-              </li>
-              <li>
-                Compiled resources concerning the cognitive processes involved in using a Minspeak™ icon-sequencing communication device
-              </li>
-              <li>
-                Attended 3-day Minspeak™ seminar in Pittsburgh, PA for training in technology and psycholinguistics of the device
-              </li>
-            </ul>
+            <div>GPA: 4.48</div>
+            <div>World Languages Department Student of the Year 2014</div>
+            <div><i>Relevant Coursework:</i> Multivariable Calculus, Matrix Algebra, BC Calculus</div>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2017 - May 2018</span>
+            <span class="text-primary">September 2010 - June 2014</span>
           </div>
-        </div>
-
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-          <div class="resume-content">
-            <h3 class="mb-0">Student Intern</h3>
-            <div class="subheading mb-3">Contemplative Sciences Center</div>
-            <p></p>
-            <ul>
-              <li>
-                Designed and executed new programming and propelled new partnerships for CSC with UVA student groups through systematic outreach and relationship building in collaboration with staff
-              </li>
-              <li>
-                Designed and distributed marketing materials using Canva, including 9 flyers and the calendar template
-              </li>
-              <li>
-                Compiled a bibliography repository of resources relevant to contemplative sciences and pedagogical innovations
-              </li>
-              <li>
-                Co-founded Contemplation@UVA, a student community supporting healthy living, self-awareness, and genuine connection
-              </li>
-            </ul>
-          </div>
-          <div class="resume-date text-md-right">
-            <span class="text-primary">December 2016 - December 2017</span>
-          </div>
-        </div>
+        </div> -->
 
       </div>
-
     </section>
 
     <hr class="m-0">
@@ -325,77 +316,87 @@
 
     <hr class="m-0">
 
-    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
       <div class="w-100">
-        <h2 class="mb-5">Projects</h2>
+        <h2 class="mb-5">Experience</h2>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/KellySlatery/capstone" target="_blank"><h3 class="mb-0">Musical Recommendation System</h3></a>
-            <div class="subheading mb-3">Capstone project for General Assembly Data Science Immersive</div>
-            <div>For our final capstone project at General Assembly, I created a recommender system, hosted locally through Flask, that recommends each user three musicals based on their mood. For this project, I used:
-              <ul>
-                <li>Python</li>
-                <li>Selenium</li>
-                <li>BeautifulSoup</li>
-                <li>Requests</li>
-                <li>Wikipedia API</li>
-                <li>spaCy</li>
-                <li>scikit-learn</li>
-                <li>Flask</li>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-              I used Python for the majority of this project. Selenium, Requests, the Wikipedia API, and BeautifulSoup were used to collect the data (196 most popular user-ranked musicals and their synopses). Then, I used spaCy to process and vectorize the text data, and later to compute cosine similarity between the user input and each musical synopsis. I also used TextBlob to compute sentiment ratings for each synopsis. To evaluate my recommender, I clustered musicals using a scikit-learned KMeans model to compare recommendations. Last, I implemented the recommendation system using Flask to create a locally hosted webpage where a user can type in a short description of their mood, answering the questions, “How are you feeling? What’s going on with you?” and receive three musicals to listen to that match their mood.
-            </div>
+            <h3 class="mb-0">Fulbright English Teaching Assistant</h3>
+            <div class="subheading mb-3">Fulbright Taiwan, Foundation for Scholarly Exchange</div>
+            <p></p>
+            <ul>
+              <li>
+                Collaborated daily with a local English teacher to plan and execute 14 English classes per week for grades 3-6 in rural Taiwan
+              </li>
+              <li>
+                Prepared and executed 4 engaging, content-based English lessons per week focused on cultivating international perspective
+              </li>
+              <li>
+                Fostered community engagement through an after-school running club, English Corner at the local vocational school, and English camps
+              </li>
+              <li>
+                Developed teaching strategies, classroom management techniques, and intercultural communication skills at bi-weekly professional development workshops
+              </li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">March 2020</span>
+            <span class="text-primary">August 2018 - July 2019</span>
           </div>
         </div>
 
         <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
           <div class="resume-content">
-            <a href="https://github.com/KellySlatery/client_project" target="_blank"><h3 class="mb-0">Optimizing Evacuation Routes using Real-Time Traffic Information</h3></a>
-            <div class="subheading mb-3">Project #5 for General Assembly Data Science Immersive</div>
+            <h3 class="mb-0">Research Assistant</h3>
+            <div class="subheading mb-3">UVA Augmentative and Alternative Communication Lab</div>
             <p></p>
-            <div>For our fifth project at General Assembly, we worked in groups of three to address a problem faced by clients at NewLight Technologies. My group worked on optimizing evacuation routes using real-time traffic information to address the lack of up-to-date navigational information during disasters. For this project, we used:
-              <ul>
-                <li>Python</li>
-                <li>GetOldTweets3</li>
-                <li>scikit-learn</li>
-                <li>Geocoder</li>
-                <li>Tableau</li>
-              </ul>
-            My primary tasks on this project were: collecting > 100,000 tweets using GetOldTwets3, organizing the data, modeling the data using Logistic Regression in scikit-learn, exporting the model using the Python pickle library, evaluating the models using accuracy scores and confusion matrices, getting predictions on the test dataset, and exporting our coordinates to a Tableau map. In the end, we were able to identify 103 tweets containing useful road closure information and map 43 of those road closures.
-            </div>
+            <ul>
+              <li>
+                Collaborated with team of five to design, execute, and analyze data from semester-long research study concerning the best teaching method for Minspeak™ communication devices
+              </li>
+              <li>
+                Led the writing and editing of our final research paper, currently in review
+              </li>
+              <li>
+                Compiled resources concerning the cognitive processes involved in using a Minspeak™ icon-sequencing communication device
+              </li>
+              <li>
+                Attended 3-day Minspeak™ seminar in Pittsburgh, PA for training in technology and psycholinguistics of the device
+              </li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">February 2020</span>
+            <span class="text-primary">January 2017 - May 2018</span>
           </div>
         </div>
 
-        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
           <div class="resume-content">
-            <a href="https://github.com/KellySlatery/nlp_project_dsi" target="_blank"><h3 class="mb-0">Classifying Subreddibt Posts: The Beatles vs. Queen</h3></a>
-            <div class="subheading mb-3">Project #3 for General Assembly Data Science Immersive</div>
+            <h3 class="mb-0">Student Intern</h3>
+            <div class="subheading mb-3">Contemplative Sciences Center</div>
             <p></p>
-            <div>For our third project at General Assembly, I worked with the Reddit API, NLP techniques, and various supervised learning models to classify tweets as belonging to either the Beatles or Queen Subreddit. For this project, I used:
-              <ul>
-                <li>Python</li>
-                <li>Pushshift Reddit API</li>
-                <li>NLTK (Natural Language Toolkit)</li>
-                <li>scikit-learn</li>
-              </ul>
-            The purpose of this project was to address the question of “Who is really the better band?” by looking at what distinguishes how the respective bands’ fanbases talk about them. First, I pulled 40,000 total Reddit posts and cleaned them using NLTK. Then, I GridSearched over combinations of CountVectorizer and TFIDFVectorizer (Term Frequency Inverse Document Frequency) with 7 different supervised learning models (Logistic Regression, K-Nearest Neighbors, Random Forest, Multinomial Naïve Bayes, Bagging Classifier, Adaptive Boost Classifier, Support Vector Classifier) to classify tweets. I used Logistic Regression paired with TFIDFVectorizer as my final classification model because it provided fairly accurate predictions (accuracy ~= 85.53% ; baseline accuracy ~= 50.6%) and a more interpretable model. The result was that, though both bands receive a lot of love and attention from their fanbases, the Beatles are more pop while Queen is solidly rock.
-            </div>
+            <ul>
+              <li>
+                Designed and executed new programming and propelled new partnerships for CSC with UVA student groups through systematic outreach and relationship building in collaboration with staff
+              </li>
+              <li>
+                Designed and distributed marketing materials using Canva, including 9 flyers and the calendar template
+              </li>
+              <li>
+                Compiled a bibliography repository of resources relevant to contemplative sciences and pedagogical innovations
+              </li>
+              <li>
+                Co-founded Contemplation@UVA, a student community supporting healthy living, self-awareness, and genuine connection
+              </li>
+            </ul>
           </div>
           <div class="resume-date text-md-right">
-            <span class="text-primary">January 2020</span>
+            <span class="text-primary">December 2016 - December 2017</span>
           </div>
         </div>
 
       </div>
+
     </section>
 
     <hr class="m-0">
